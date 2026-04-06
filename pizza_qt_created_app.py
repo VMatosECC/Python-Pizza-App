@@ -136,61 +136,78 @@ class Ui_MainWindow(object):
         self.radioShapeRounded = QRadioButton(self.groupShape)
         self.radioShapeRounded.setObjectName("radioShapeRounded")
         self.radioShapeRounded.setGeometry(QRect(10, 20, 92, 20))
+        
         self.radioShapeSquare = QRadioButton(self.groupShape)
         self.radioShapeSquare.setObjectName("radioShapeSquare")
         self.radioShapeSquare.setGeometry(QRect(10, 50, 92, 20))
+        
         self.groupCheeseSelector = QGroupBox(self.frameLeft)
         self.groupCheeseSelector.setObjectName("groupCheeseSelector")
         self.groupCheeseSelector.setGeometry(QRect(170, 190, 171, 111))
+        
         self.radioCheeseStandard = QRadioButton(self.groupCheeseSelector)
         self.radioCheeseStandard.setObjectName("radioCheeseStandard")
         self.radioCheeseStandard.setGeometry(QRect(10, 20, 92, 20))
+        
         self.radioCheeseDouble = QRadioButton(self.groupCheeseSelector)
         self.radioCheeseDouble.setObjectName("radioCheeseDouble")
         self.radioCheeseDouble.setGeometry(QRect(10, 50, 121, 20))
+        
         self.radioCheeseNone = QRadioButton(self.groupCheeseSelector)
         self.radioCheeseNone.setObjectName("radioCheeseNone")
         self.radioCheeseNone.setGeometry(QRect(10, 80, 92, 20))
+        
         self.comboSize = QComboBox(self.frameLeft)
         self.comboSize.setObjectName("comboSize")
         self.comboSize.setGeometry(QRect(170, 50, 171, 21))
+        
         self.labelSize = QLabel(self.frameLeft)
         self.labelSize.setObjectName("labelSize")
         self.labelSize.setGeometry(QRect(170, 10, 171, 31))
+        
         self.frameRight = QFrame(self.centralwidget)
         self.frameRight.setObjectName("frameRight")
         self.frameRight.setGeometry(QRect(380, 120, 291, 301))
         self.frameRight.setFrameShape(QFrame.Shape.StyledPanel)
         self.frameRight.setFrameShadow(QFrame.Shadow.Raised)
+        
         self.labelCustomer = QLabel(self.frameRight)
         self.labelCustomer.setObjectName("labelCustomer")
         self.labelCustomer.setGeometry(QRect(10, 10, 171, 31))
         self.plainTextCustomerName = QPlainTextEdit(self.frameRight)
+        
         self.plainTextCustomerName.setObjectName("plainTextCustomerName")
         self.plainTextCustomerName.setGeometry(QRect(10, 50, 241, 31))
+        
         self.labelSummaryNotes = QLabel(self.frameRight)
         self.labelSummaryNotes.setObjectName("labelSummaryNotes")
         self.labelSummaryNotes.setGeometry(QRect(10, 90, 171, 31))
         self.plainTextSummaryNotes = QPlainTextEdit(self.frameRight)
         self.plainTextSummaryNotes.setObjectName("plainTextSummaryNotes")
         self.plainTextSummaryNotes.setGeometry(QRect(10, 120, 261, 81))
+        
         self.btnClearToppings = QPushButton(self.frameRight)
         self.btnClearToppings.setObjectName("btnClearToppings")
         self.btnClearToppings.setGeometry(QRect(10, 240, 121, 51))
+        
         self.btnSummarize = QPushButton(self.frameRight)
         self.btnSummarize.setObjectName("btnSummarize")
         self.btnSummarize.setGeometry(QRect(10, 210, 121, 24))
+        
         self.btnPlaceOrder = QPushButton(self.frameRight)
         self.btnPlaceOrder.setObjectName("btnPlaceOrder")
         self.btnPlaceOrder.setGeometry(QRect(150, 210, 111, 81))
+        
         self.dateTimeEdit = QDateTimeEdit(self.centralwidget)
         self.dateTimeEdit.setObjectName("dateTimeEdit")
         self.dateTimeEdit.setGeometry(QRect(380, 430, 291, 24))
+        
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName("menubar")
         self.menubar.setGeometry(QRect(0, 0, 697, 33))
         MainWindow.setMenuBar(self.menubar)
+        
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
@@ -271,9 +288,10 @@ class Ui_MainWindow(object):
 
     # retranslateUi
 
+    # ------------------------------------------------------------------------------------------------------------
+    # This is the section where you add the 'code-behind' logic
+    # ------------------------------------------------------------------------------------------------------------
     def on_load(self):
-        #self.selected_toppings = set()  # Initialize the set to store uniquely selected toppings
-        
         # Set default values and states for UI components
         self.plainTextCustomerName.setPlaceholderText("Enter customer name here...")
         self.comboSize.addItems(["Small", "Medium", "Large", "Extra Large"])
