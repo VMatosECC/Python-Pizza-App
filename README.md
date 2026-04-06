@@ -36,6 +36,3 @@ It is designed as a learning-friendly project that demonstrates:
 
 ---
 
-## Purpose
-
-This project is a practical example of a Python desktop application that combines UI design and interaction logic, making it useful for **students and developers** learning event-driven programming with Qt.
